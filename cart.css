@@ -16,16 +16,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     gap: 2vw;
+    flex-wrap: wrap;
 }
-.cartitem{
+.card{
     display: flex;
-    border-radius: 2vw;
-    border: 2px solid black;
-    font-size: 1.2vw;
     justify-content: space-around;
     align-items: center;
-    height: 7vw;
-    width: 100%;
+    gap: 2vw;
+    padding: 2vw;
+    flex-direction: column;
+    border-radius: 2vw;
+    border: 2px solid black;
+    width: 19vw;
+    height: 25vw;
+    font-size: 1.2vw;
+}
+.quantity-box{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding: 1vw;
+    gap: 1vw;
 }
