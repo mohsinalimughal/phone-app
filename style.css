@@ -25,14 +25,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 2vw;
+    /* gap: 1vw; */
     padding: 2vw;
     flex-direction: column;
     border-radius: 2vw;
     border: 2px solid black;
     width: 19vw;
-    height: 25vw;
+    height: 35vw;
     font-size: 1.2vw;
+}
+.card>img{
+    width: 14vw;
 }
 .card>button{
       background-color: aliceblue;
