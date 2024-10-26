@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* body{
+    background: black;
+    color: white;
+} */
+.main{
+    text-align: center;
+    padding: 3vw;
+}
+.products{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 3vw;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vw;
+    padding: 2vw;
+    flex-direction: column;
+    border-radius: 2vw;
+    border: 2px solid black;
+    width: 19vw;
+    height: 25vw;
+    font-size: 1.2vw;
+}
+.card>button{
+      background-color: aliceblue;
+      color: black;
+      padding: 0.6vw;
+      font-size: 1vw;
+}
