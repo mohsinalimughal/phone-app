@@ -23,7 +23,7 @@ cart.map((item,index)=>{
 
 const deleteitem = (index)=>{
     productsdiv.innerHTML = `` 
-        cart.splice(index,1)
+    cart.splice(index,1) 
        const newcartstring = JSON.stringify(cart)
        localStorage.setItem("cart",newcartstring)
         cart.map((item,index)=>{
@@ -43,6 +43,9 @@ const deleteitem = (index)=>{
 }
 
 const minusitem = (index)=>{
+    if(cart[index].quantity === 1){
+        deleteitem(index)
+    }else{
     productsdiv.innerHTML = `` 
     cart[index].quantity = cart[index].quantity - 1
     cart.map((item,index)=>{
@@ -59,7 +62,7 @@ const minusitem = (index)=>{
             <button onclick="deleteitem(${index})" >delete</button>
            </div>`
             localStorage.setItem("cart",JSON.stringify(cart))
-        })}
+        })}}
 const plusitem = (index)=>{
         productsdiv.innerHTML = `` 
         cart[index].quantity = cart[index].quantity + 1
